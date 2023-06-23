@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="app">
+            <div id="top">
+                <div id="user-info">
+                    <img src="https://images.unsplash.com/photo-1605326152964-56fb991b95ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80" alt="Mulher sorridente com batom nos lábios, e cabelo ruivo virado levemente de lado"/>
+                
+                    <div id="user-status">
+                      <strong>Elefante da Savana</strong>
+                      <div class="status">Online</div>
+                    </div>
+                </div>
+                <div id="close-chat">
+                    <i class="ph ph-x"></i>
+                </div>
+            </div>
+            <div id="messages">
+                <div id="last-seen">Hoje 11:30</div>
+
+                <div class="messages">
+                    <div class="message">
+                        <div class="top">Elefante da Savana - 11:30</div>
+                        <div class="body">Sabia que sou um ótimo jardineiro? Eu moldo a paisagem arrancando e derrubando árvores, além de cavar para buscar água com minhas presas e tromba. E por meio do meu esterco, eu planto as sementes das plantas, arbustos e árvores.</div>
+                    </div>
+
+                    <div class="message you">
+                        <div class="top">Você - 11:32</div>
+                        <div class="body">Sério? Então, pode cuidar das minhas plantas enquanto viajo? Mas sem arrancar nem estercar nada, viu?</div>
+                    </div>
+
+                    <div class="message">
+                        <div class="top">Elefante da Savana - 11:34</div>
+                        <div class="body">Obaaa! Blz. Ah, já te vi daqui, vc me fala as semanas que você viaja, tá bom? Tchau 👋</div>
+                    </div>
+
+                    <div class="message you test">
+                        <div class="top">Você - 11:36</div>
+                        <div class="body"><strong>É também já te vi. Blz tchau.</strong></div>
+                    </div>
+                </div>
+
+        <form id="bottom">
+<div class="input-wrapper">
+    <input type="text" placeholder="Digite sua mensagem">
+    <button type="submit">
+        <i class="ph-fill ph-paper-plane-right"></i>
+    </button>
+</form>
+</div>
+</div>
+        <script>
+            const messages = document.querySelector('.messages')
+            messages.lastElementChild.scrollIntoView()
+        </script>
+</body>
+</html>
